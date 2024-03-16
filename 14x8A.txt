@@ -1,0 +1,2 @@
+Valores em fileira de: Balança, Temperatura, Pressão e Velocidade
+-0.339;nan;-10000000.00;0.00
