@@ -3,7 +3,12 @@ void begin_vcas(){
 }
 
 void loop_vcas(){
-  df_pressao = analogRead(I_VCAS);
-  Serial.println(df_pressao); //tratar essa saída (ou criar uma biblioteca)
+
+  vi = analogRead(I_VCAS);
+  difPressure = SDP6x.GetPressureDiff();
+  df_pressao = 5*(0.2*vi+5); //cálculo fornecido pelo manual do sensor que mostra o sinal de saída 
+
+  Serial.println(df_pressao); 
+  Serial.println(difPressure);
   delay(500);
 }

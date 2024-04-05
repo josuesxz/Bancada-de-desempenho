@@ -14,7 +14,7 @@ double temperatura;
 HX711 balanca;                        // define instancia balança HX711
 float calibration_factor = 211020.00;     // Mudar em função do sensor
 
-float difPressure, vcas, massa, df_pressao;
+float difPressure, vcas, massa, vi, df_pressao, pressao_ref, pressao_ar;
 float densidade = 1.213;                  // Mudar em função do local
 #define I_VCAS A3
 
@@ -23,7 +23,8 @@ void setup(){
   Serial.begin(9600);
   //begin_temperatura();
   //begin_balanca();
-  begin_vcas();
+  //begin_vcas();
+  begin_tac();
   difPressure = 0.0;
   Serial.println("Valores em fileira de: Balança, Temperatura, Pressão e Velocidade");
 }
@@ -31,7 +32,8 @@ void setup(){
 void loop(){
   //loop_temperatura();
   //loop_balanca(); 
-  loop_vcas();
+  //loop_vcas();
+  loop_tac();
   Serial.print("\n");    
   delay(500);
 }
