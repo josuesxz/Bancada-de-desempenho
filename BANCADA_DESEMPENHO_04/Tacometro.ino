@@ -1,16 +1,16 @@
 void begin_tac(){
   pinMode(sensorPin, INPUT);
-  attachInterrupt(digitalPinToInterrupt(sensorPin), countPulse, FALLING);
+  attachInterrupt(digitalPinToInterrupt(sensorPin), countPulse, FALLING); // Interrupção que irá verificar a variação do sensor
 }
 
 void loop_tac(){
   unsigned long currentTime = millis();
-  if (currentTime - lastPulseTime >= 1000) {
-    rpm = (pulseCount * 60000UL) / (currentTime - lastPulseTime); // Converte pulsos por milissegundo para RPM
+  if (currentTime - lastPulseTime >= 1000) { // define um intervalo para verificar a 
+    rpm = (pulseCount * 60000UL) / (currentTime - lastPulseTime); //Cálculo do RPM
     Serial.print("RPM: ");
     Serial.println(rpm);
-    lastPulseTime = currentTime;
-    pulseCount = 0; // Reinicia o contador de pulsos
+    lastPulseTime = currentTime; // Reinicia o contador de pulsos invalidando a condição 
+    pulseCount = 0; 
   }
 }
 
