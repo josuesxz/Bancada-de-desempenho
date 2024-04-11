@@ -1,6 +1,6 @@
 void begin_tac(){
-  pinMode(sensorPin, INPUT);
-  attachInterrupt(digitalPinToInterrupt(sensorPin), countPulse, FALLING); // Interrupção que irá verificar a variação do sensor
+  pinMode(pinTac, INPUT);
+  attachInterrupt(digitalPinToInterrupt(pinTac), countPulse, FALLING); // Interrupção que irá verificar a variação do sensor
 }
 
 void loop_tac(){
