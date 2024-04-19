@@ -22,6 +22,7 @@ const int pinTac = 2;
 volatile unsigned long pulseCount = 0; // Contador de pulsos
 unsigned long lastPulseTime = 0; // Último momento em que um pulso foi detectado
 unsigned long rpm = 0; // Rotação por minuto
+float fator_correcao_tac = 0.870998;
 
 void setup(){
   Wire.begin();
