@@ -26,8 +26,8 @@ float fator_correcao_tac = 0.870998;
 
 void setup(){
   Wire.begin();
-  Serial.begin(115200);
-  //begin_temperatura();
+  Serial.begin(9600);
+  begin_temperatura();
   //begin_balanca();
   //begin_vcas();
   //begin_tac();
@@ -36,7 +36,7 @@ void setup(){
 }
 
 void loop(){
-  //loop_temperatura();
+  loop_temperatura();
   //loop_balanca(); 
   //loop_vcas();
   //loop_tac();
