@@ -1,0 +1,164 @@
+;Proteus Design Interchange Format
+
+(PDIF
+  (vendor "Labcenter Electronics")
+  (version 1 0)
+  (library
+    (part "DHT22"
+      (family "ANA")
+      (package "DHT22")
+      (description "_Capacitive-type_humidity_and_temperature_module/sensor_")
+      (attribute "PKG_TYPE" "DHT22")
+      (attribute "MF" "Aosong_Electronics")
+      (attribute "PACKAGE" "Package_")
+      (attribute "PRICE" "None")
+      (attribute "SNAPEDA_LINK" "https://www.snapeda.com/parts/DHT22/Aosong+Electronics/view-part/?ref=snap")
+      (attribute "MP" "DHT22")
+      (attribute "AVAILABILITY" "Not_in_stock")
+      (attribute "CHECK_PRICES" "https://www.snapeda.com/parts/DHT22/Aosong+Electronics/view-part/?ref=eda")
+      (gate
+        (swap 1)
+        (symbol "DHT22")
+        (pin "DATA" DATA (type OP))
+        (pin "GND" GND (type PP))
+        (pin "NULL" NC (type NC))
+        (pin "VDD" VDD (type PP))
+      )
+    )
+    (symbol "DHT22"
+      (units THOU)
+      (graphic
+        (stroke 10.0)
+        (path (pt 0.0 500.0) (pt 0.0 0.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt 0.0 0.0) (pt 400.0 0.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt 400.0 0.0) (pt 400.0 500.0))
+      )
+      (graphic
+        (stroke 10.0)
+        (path (pt 400.0 500.0) (pt 0.0 500.0))
+      )
+      (terminal
+        (body (symbol "PIN_R180_U_L200") (pt 600.0 300.0) (rot 0) (mir 0) (visible true))
+        (name (pt -239.37 0.0) (rot 0) (just MIDDLE RIGHT) (visible true))
+        (number (pt -39.37 0.0) (rot 0) (just MIDDLE RIGHT) (visible true))
+      )
+      (terminal
+        (body (symbol "PIN_R180_U_L200") (pt 600.0 100.0) (rot 0) (mir 0) (visible true))
+        (name (pt -239.37 0.0) (rot 0) (just MIDDLE RIGHT) (visible true))
+        (number (pt -39.37 0.0) (rot 0) (just MIDDLE RIGHT) (visible true))
+      )
+      (terminal
+        (body (symbol "PIN_R180_U_L200") (pt 600.0 200.0) (rot 0) (mir 0) (visible true))
+        (name (pt -239.37 0.0) (rot 0) (just MIDDLE RIGHT) (visible true))
+        (number (pt -39.37 0.0) (rot 0) (just MIDDLE RIGHT) (visible true))
+      )
+      (terminal
+        (body (symbol "PIN_R180_U_L200") (pt 600.0 400.0) (rot 0) (mir 0) (visible true))
+        (name (pt -239.37 0.0) (rot 0) (just MIDDLE RIGHT) (visible true))
+        (number (pt -39.37 0.0) (rot 0) (just MIDDLE RIGHT) (visible true))
+      )
+    )
+    (symbol "PIN_R180_U_L200"
+      (units THOU)
+      (graphic
+        (stroke 6.5)
+        (path (pt 0.0 0.0) (pt -200.0 0.0))
+      )
+    )
+    (package "DHT22"
+      (units THOU)
+      (layer TSLK
+        (graphic
+          (stroke 10.0)
+          (path (pt 300.0 100.0) (pt 0.0 100.0))
+        )
+        (graphic
+          (stroke 10.0)
+          (path (pt 0.0 100.0) (pt -300.0 100.0))
+        )
+        (graphic
+          (stroke 10.0)
+          (path (pt -300.0 100.0) (pt -300.0 900.0))
+        )
+        (graphic
+          (stroke 10.0)
+          (path (pt 300.0 100.0) (pt 300.0 900.0))
+        )
+        (graphic
+          (stroke 10.0)
+          (path (pt -300.0 900.0) (pt 300.0 900.0))
+        )
+        (graphic
+          (stroke 10.0)
+          (path (pt -300.0 900.0) (pt -200.0 1100.0))
+        )
+        (graphic
+          (stroke 10.0)
+          (path (pt -200.0 1100.0) (pt 200.0 1100.0))
+        )
+        (graphic
+          (stroke 10.0)
+          (path (pt 200.0 1100.0) (pt 300.0 900.0))
+        )
+      )
+      (leg DRILL1 (pt 0 975) (padstack 1))
+      (leg DATA (pt -50 0) (padstack 2))
+      (leg GND (pt 150 0) (padstack 3))
+      (leg NC (pt 50 0) (padstack 4))
+      (leg VDD (pt -150 0) (padstack 5))
+      (padstack 1
+        (hole 118)
+        (plated false)
+        (pad (layer TCOP) (round 0))
+        (pad (layer INNER) (round 0))
+        (pad (layer BCOP) (round 0))
+      )
+      (padstack 2
+        (slot 31 31 0 0)
+        (plated true)
+        (pad (layer TCOP) (ovalf 51.5 102.99 0 90.0))
+        (pad (layer INNER) (ovalf 51.5 102.99 0 90.0))
+        (pad (layer BCOP) (ovalf 51.5 102.99 0 90.0))
+        (pad (layer TRES) (ovalf 51.5 102.99 0 90.0))
+        (pad (layer BRES) (ovalf 51.5 102.99 0 90.0))
+      )
+      (padstack 3
+        (slot 31 31 0 0)
+        (plated true)
+        (pad (layer TCOP) (ovalf 51.5 102.99 0 90.0))
+        (pad (layer INNER) (ovalf 51.5 102.99 0 90.0))
+        (pad (layer BCOP) (ovalf 51.5 102.99 0 90.0))
+        (pad (layer TRES) (ovalf 51.5 102.99 0 90.0))
+        (pad (layer BRES) (ovalf 51.5 102.99 0 90.0))
+      )
+      (padstack 4
+        (slot 31 31 0 0)
+        (plated true)
+        (pad (layer TCOP) (ovalf 51.5 102.99 0 90.0))
+        (pad (layer INNER) (ovalf 51.5 102.99 0 90.0))
+        (pad (layer BCOP) (ovalf 51.5 102.99 0 90.0))
+        (pad (layer TRES) (ovalf 51.5 102.99 0 90.0))
+        (pad (layer BRES) (ovalf 51.5 102.99 0 90.0))
+      )
+      (padstack 5
+        (slot 31 31 0 0)
+        (plated true)
+        (pad (layer TCOP) (ovalf 51.5 102.99 0 90.0))
+        (pad (layer INNER) (ovalf 51.5 102.99 0 90.0))
+        (pad (layer BCOP) (ovalf 51.5 102.99 0 90.0))
+        (pad (layer TRES) (ovalf 51.5 102.99 0 90.0))
+        (pad (layer BRES) (ovalf 51.5 102.99 0 90.0))
+      )
+      (model DHT22.step
+        (euler 0 0 0)
+        (offset 0 0 0)
+      )
+    )
+  )
+)

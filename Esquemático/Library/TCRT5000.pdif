@@ -1,0 +1,334 @@
+;Proteus Design Interchange Format
+
+(PDIF
+  (vendor "Labcenter Electronics")
+  (version 1 0)
+  (library
+    (part "TCRT5000"
+      (family "ANA")
+      (package "OPTO_TCRT5000")
+      (description "950_nm_60_mA_Through_Hole_Reflective_Optical_Sensor_with_Transistor_Output")
+      (attribute "PKG_TYPE" "OPTO_TCRT5000")
+      (attribute "MF" "Vishay")
+      (attribute "MAXIMUM_PACKAGE_HEIGHT" "7.2mm")
+      (attribute "PACKAGE" "TCRT5000_Vishay")
+      (attribute "PRICE" "None")
+      (attribute "CHECK_PRICES" "https://www.snapeda.com/parts/TCRT5000/Vishay+Semiconductor+Opto+Division/view-part/?ref=eda")
+      (attribute "STANDARD" "Manufacturer_recommendations")
+      (attribute "PARTREV" "1.7")
+      (attribute "SNAPEDA_LINK" "https://www.snapeda.com/parts/TCRT5000/Vishay+Semiconductor+Opto+Division/view-part/?ref=snap")
+      (attribute "MP" "TCRT5000")
+      (attribute "DESCRIPTION" "_Reflective_Optical_Sensor_0.591_(15mm)_PCB_Mount_")
+      (attribute "AVAILABILITY" "In_Stock")
+      (attribute "MANUFACTURER" "Vishay")
+      (gate
+        (swap 1)
+        (symbol "TCRT5000")
+        (pin "A" A (type PS))
+        (pin "CATH" CATH (type PS))
+        (pin "COLL" COLL (type PS))
+        (pin "E" E (type PS))
+      )
+    )
+    (symbol "TCRT5000"
+      (units THOU)
+      (graphic
+        (stroke 6.0)
+        (path (pt -200.0 200.0) (pt -200.0 100.0))
+      )
+      (graphic
+        (stroke 6.0)
+        (path (pt -200.0 100.0) (pt -200.0 -100.0))
+      )
+      (graphic
+        (stroke 6.0)
+        (path (pt -200.0 -100.0) (pt -200.0 -200.0))
+      )
+      (graphic
+        (stroke 6.0)
+        (path (pt -200.0 -200.0) (pt 200.0 -200.0))
+      )
+      (graphic
+        (stroke 6.0)
+        (path (pt 200.0 -200.0) (pt 200.0 -100.0))
+      )
+      (graphic
+        (stroke 6.0)
+        (path (pt 200.0 -100.0) (pt 200.0 100.0))
+      )
+      (graphic
+        (stroke 6.0)
+        (path (pt 200.0 100.0) (pt 200.0 200.0))
+      )
+      (graphic
+        (stroke 6.0)
+        (path (pt 200.0 200.0) (pt -200.0 200.0))
+      )
+      (graphic
+        (stroke 6.0)
+        (path (pt -200.0 100.0) (pt -100.0 100.0))
+      )
+      (graphic
+        (stroke 6.0)
+        (path (pt -100.0 100.0) (pt -100.0 -100.0))
+      )
+      (graphic
+        (stroke 6.0)
+        (path (pt -100.0 -100.0) (pt -200.0 -100.0))
+      )
+      (graphic
+        (stroke 1)
+        (fill SOLID)
+        (path
+          (pt -125.0 25.0)
+          (pt -75.0 25.0)
+          (pt -100.0 0.0)
+          (pt -125.0 25.0)
+          (closed)
+        )
+      )
+      (graphic
+        (stroke 6.0)
+        (path (pt -125.0 0.0) (pt -75.0 0.0))
+      )
+      (graphic
+        (stroke 6.0)
+        (path (pt -25.0 75.0) (pt 0.0 50.0))
+      )
+      (graphic
+        (stroke 6.0)
+        (path (pt 0.0 50.0) (pt -25.0 50.0))
+      )
+      (graphic
+        (stroke 6.0)
+        (path (pt -25.0 50.0) (pt 25.0 0.0))
+      )
+      (graphic
+        (stroke 6.0)
+        (path (pt 25.0 25.0) (pt 25.0 0.0))
+      )
+      (graphic
+        (stroke 6.0)
+        (path (pt 25.0 0.0) (pt 0.0 0.0))
+      )
+      (graphic
+        (stroke 6.0)
+        (path (pt 75.0 75.0) (pt 75.0 0.0))
+      )
+      (graphic
+        (stroke 6.0)
+        (path (pt 75.0 0.0) (pt 75.0 -75.0))
+      )
+      (graphic
+        (stroke 6.0)
+        (path (pt 75.0 0.0) (pt 150.0 100.0))
+      )
+      (graphic
+        (stroke 6.0)
+        (path (pt 150.0 100.0) (pt 200.0 100.0))
+      )
+      (graphic
+        (stroke 6.0)
+        (path (pt 75.0 0.0) (pt 150.0 -100.0))
+      )
+      (graphic
+        (stroke 6.0)
+        (path (pt 150.0 -100.0) (pt 200.0 -100.0))
+      )
+      (graphic
+        (stroke 1)
+        (fill SOLID)
+        (path
+          (pt 125.0 -100.0)
+          (pt 150.0 -100.0)
+          (pt 150.0 -75.0)
+          (pt 125.0 -100.0)
+          (closed)
+        )
+      )
+      (terminal
+        (body (symbol "PIN_R0_U_L100") (pt -300.0 100.0) (rot 0) (mir 0) (visible true))
+        (name (pt 139.37 0.0) (rot 0) (just MIDDLE LEFT) (visible false))
+        (number (pt -39.37 0.0) (rot 0) (just MIDDLE LEFT) (visible true))
+      )
+      (terminal
+        (body (symbol "PIN_R0_U_L100") (pt -300.0 -100.0) (rot 0) (mir 0) (visible true))
+        (name (pt 139.37 0.0) (rot 0) (just MIDDLE LEFT) (visible false))
+        (number (pt -39.37 0.0) (rot 0) (just MIDDLE LEFT) (visible true))
+      )
+      (terminal
+        (body (symbol "PIN_R180_U_L100") (pt 300.0 100.0) (rot 0) (mir 0) (visible true))
+        (name (pt -139.37 0.0) (rot 0) (just MIDDLE RIGHT) (visible false))
+        (number (pt -39.37 0.0) (rot 0) (just MIDDLE RIGHT) (visible true))
+      )
+      (terminal
+        (body (symbol "PIN_R180_U_L100") (pt 300.0 -100.0) (rot 0) (mir 0) (visible true))
+        (name (pt -139.37 0.0) (rot 0) (just MIDDLE RIGHT) (visible false))
+        (number (pt -39.37 0.0) (rot 0) (just MIDDLE RIGHT) (visible true))
+      )
+    )
+    (symbol "PIN_R0_U_L100"
+      (units THOU)
+      (graphic
+        (stroke 6.5)
+        (path (pt 0.0 0.0) (pt 100.0 0.0))
+      )
+    )
+    (symbol "PIN_R180_U_L100"
+      (units THOU)
+      (graphic
+        (stroke 6.5)
+        (path (pt 0.0 0.0) (pt -100.0 0.0))
+      )
+    )
+    (package "OPTO_TCRT5000"
+      (units THOU)
+      (layer TSLK
+        (graphic
+          (stroke 5.0)
+          (path (pt -202.76 -70.87) (pt -202.76 116.14))
+        )
+        (graphic
+          (stroke 5.0)
+          (path (pt -202.76 116.14) (pt -46.06 116.14))
+        )
+        (graphic
+          (stroke 5.0)
+          (path (pt -157.48 -116.14) (pt -46.06 -116.14))
+        )
+        (graphic
+          (stroke 5.0)
+          (path (pt 46.06 -116.14) (pt 141.73 -116.14))
+        )
+        (graphic
+          (stroke 5.0)
+          (path (pt 141.73 116.14) (pt 46.06 116.14))
+        )
+        (graphic
+          (stroke 5.0)
+          (path (pt 202.76 -55.12) (pt 202.76 55.12))
+        )
+        (graphic
+          (stroke 5.0)
+          (path (pt 141.73 -116.14) (pt 202.76 -55.12))
+        )
+        (graphic
+          (stroke 5.0)
+          (path (pt 141.73 116.14) (pt 202.76 55.12))
+        )
+      )
+      (layer TASM
+        (graphic
+          (stroke 5.0)
+          (path (pt -202.76 116.14) (pt -202.76 -116.14))
+        )
+        (graphic
+          (stroke 5.0)
+          (path (pt -202.76 -116.14) (pt 141.73 -116.14))
+        )
+        (graphic
+          (stroke 5.0)
+          (path (pt 141.73 116.14) (pt -202.76 116.14))
+        )
+        (graphic
+          (stroke 5.0)
+          (path (pt 202.76 -55.12) (pt 202.76 55.12))
+        )
+        (graphic
+          (stroke 5.0)
+          (path (pt 141.73 -116.14) (pt 202.76 -55.12))
+        )
+        (graphic
+          (stroke 5.0)
+          (path (pt 141.73 116.14) (pt 202.76 55.12))
+        )
+      )
+      (layer OCCA
+        (graphic
+          (stroke 1.97)
+          (path (pt -212.6 133.86) (pt -212.6 -133.86))
+        )
+        (graphic
+          (stroke 1.97)
+          (path (pt -212.6 -133.86) (pt 212.6 -133.86))
+        )
+        (graphic
+          (stroke 1.97)
+          (path (pt 212.6 -133.86) (pt 212.6 133.86))
+        )
+        (graphic
+          (stroke 1.97)
+          (path (pt 212.6 133.86) (pt -212.6 133.86))
+        )
+      )
+      (leg DRILL1 (pt -183.07 -96.46) (padstack 1))
+      (leg DRILL2 (pt 0 -74.8) (padstack 2))
+      (leg DRILL3 (pt 0 74.8) (padstack 3))
+      (leg A (pt 108.27 50) (padstack 4))
+      (leg CATH (pt 108.27 -50) (padstack 5))
+      (leg COLL (pt -108.27 50) (padstack 6))
+      (leg E (pt -108.27 -50) (padstack 7))
+      (padstack 1
+        (hole 39)
+        (plated false)
+        (pad (layer TCOP) (round 0))
+        (pad (layer INNER) (round 0))
+        (pad (layer BCOP) (round 0))
+      )
+      (padstack 2
+        (hole 98)
+        (plated false)
+        (pad (layer TCOP) (round 0))
+        (pad (layer INNER) (round 0))
+        (pad (layer BCOP) (round 0))
+      )
+      (padstack 3
+        (hole 98)
+        (plated false)
+        (pad (layer TCOP) (round 0))
+        (pad (layer INNER) (round 0))
+        (pad (layer BCOP) (round 0))
+      )
+      (padstack 4
+        (hole 39)
+        (plated true)
+        (pad (layer TCOP) (round 59.06))
+        (pad (layer INNER) (round 59.06))
+        (pad (layer BCOP) (round 59.06))
+        (pad (layer TRES) (round 62.99))
+        (pad (layer BRES) (round 62.99))
+      )
+      (padstack 5
+        (hole 39)
+        (plated true)
+        (pad (layer TCOP) (round 59.06))
+        (pad (layer INNER) (round 59.06))
+        (pad (layer BCOP) (round 59.06))
+        (pad (layer TRES) (round 62.99))
+        (pad (layer BRES) (round 62.99))
+      )
+      (padstack 6
+        (hole 39)
+        (plated true)
+        (pad (layer TCOP) (round 59.06))
+        (pad (layer INNER) (round 59.06))
+        (pad (layer BCOP) (round 59.06))
+        (pad (layer TRES) (round 62.99))
+        (pad (layer BRES) (round 62.99))
+      )
+      (padstack 7
+        (hole 39)
+        (plated true)
+        (pad (layer TCOP) (round 59.06))
+        (pad (layer INNER) (round 59.06))
+        (pad (layer BCOP) (round 59.06))
+        (pad (layer TRES) (round 62.99))
+        (pad (layer BRES) (round 62.99))
+      )
+      (model TCRT5000.step
+        (euler 0 0 0)
+        (offset 0 0 0)
+      )
+    )
+  )
+)
