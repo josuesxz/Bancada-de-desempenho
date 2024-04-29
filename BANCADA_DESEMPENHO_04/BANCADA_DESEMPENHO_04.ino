@@ -8,8 +8,8 @@
 DHT dht(DHTPIN, DHTTYPE);
 double temperatura;
 
-#define DOUT  A1                      // HX711 DATA OUT = pino A0 do Arduino 
-#define CLK   A0                      // HX711 SCK IN = pino A1 do Arduino 
+#define DOUT  A6                      // HX711 DATA OUT = pino A6 do Arduino 
+#define CLK   A7                      // HX711 SCK IN = pino A7 do Arduino 
 
 HX711 balanca;                        // define instancia balança HX711
 float calibration_factor = 12169.9293;     // Mudar em função do sensor
@@ -17,8 +17,10 @@ float calibration_factor = 12169.9293;     // Mudar em função do sensor
 float difPressure, vcas, massa, vi, df_pressao, pressao_ref, pressao_ar;
 float densidade = 1.213;                  // Mudar em função do local
 #define I_VCAS A3
+#define GND_VCAS 13
 
-const int pinTac = 2;
+#define pinTac 3
+#define VCC_TAC 2 
 volatile unsigned long pulseCount = 0; // Contador de pulsos
 unsigned long lastPulseTime = 0; // Último momento em que um pulso foi detectado
 unsigned long rpm = 0; // Rotação por minuto

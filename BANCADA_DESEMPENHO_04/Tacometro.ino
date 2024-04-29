@@ -1,9 +1,11 @@
 void begin_tac(){
   pinMode(pinTac, INPUT);
+    pinMode(VCC_TAC, OUTPUT);
   attachInterrupt(digitalPinToInterrupt(pinTac), countPulse, FALLING); // Interrupção que irá verificar a variação do sensor
 }
 
 void loop_tac(){
+  digitalWrite(VCC_TAC, HIGH);
   unsigned long currentTime = millis();
   if (currentTime - lastPulseTime >= 1000) { // define um intervalo para verificar a 
     rpm = (pulseCount * 60000UL) / (currentTime - lastPulseTime); //Cálculo do RPM
