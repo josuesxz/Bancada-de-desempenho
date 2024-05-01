@@ -10,13 +10,11 @@ double temperatura;
 
 #define DOUT  A6                      // HX711 DATA OUT = pino A6 do Arduino 
 #define CLK   A7                      // HX711 SCK IN = pino A7 do Arduino 
-
 HX711 balanca;                        // define instancia balança HX711
 float calibration_factor = 12169.9293;     // Mudar em função do sensor
 
-float difPressure, vcas, massa, vi, df_pressao, pressao_ref, pressao_ar;
+float difPressure, vcas, massa;
 float densidade = 1.213;                  // Mudar em função do local
-#define I_VCAS A3
 #define GND_VCAS 13
 
 #define pinTac 3
@@ -33,7 +31,6 @@ void setup(){
   begin_balanca();
   begin_vcas();
   begin_tac();
-  difPressure = 0.0;
   Serial.println("Valores em fileira de: Balança, Temperatura, Pressão e Velocidade");
 }
 

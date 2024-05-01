@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes'?>
 <WORKSPACE>
- <FRAME activewindow="2">
+ <FRAME activewindow="0">
   <PLACEMENT>2c0000000200000003000000ffffffffffffffffffffffffffffffffb90000000c000000c7060000f0030000</PLACEMENT>
   <WINDOW type="default" module="ISIS"/>
   <WINDOW type="default" module="ARES"/>
@@ -8,7 +8,7 @@
    <camera>
     <position x="-3991362" y="-403807" z="8508635"/>
     <focus x="-4303818" y="2718775" z="-14390"/>
-    <up x="-62915" y="936368" z="345369"/>
+    <up x="-62914" y="936357" z="345365"/>
    </camera>
   </WINDOW>
  </FRAME>
