@@ -31,7 +31,7 @@ void setup(){
   begin_balanca();
   begin_vcas();
   begin_tac();
-  Serial.println("Valores em fileira de: Balança, Temperatura, Pressão e Velocidade");
+  Serial.println("Valores em fileira de: Temperatura, Balança, Pressão, Velocidade e RPM");
 }
 
 void loop(){
