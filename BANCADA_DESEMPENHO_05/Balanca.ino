@@ -7,14 +7,7 @@ void begin_balanca(){
 void loop_balanca(){
   balanca.power_up(); // LIGANDO O SENSOR
   Serial.print("Balanca: ");
-
-  if(!balanca.is_ready()){
-    Serial.println("Erro"); 
-    }
-  else{
-    Serial.println(balanca.get_units(20), 3); 
-   } 
-
+  Serial.println(balanca.get_units(), 3); 
   balanca.power_down();			        // put the ADC in sleep mode
   delay(500);
   balanca.power_down(); // DESLIGANDO O SENSOR

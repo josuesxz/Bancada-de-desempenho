@@ -8,8 +8,8 @@
 DHT dht(DHTPIN, DHTTYPE);
 double temperatura;
 
-#define DOUT  A6                     // HX711 DATA OUT = pino A6 do Arduino 
-#define CLK   A7                      // HX711 SCK IN = pino A7 do Arduino 
+#define DOUT  7                     // HX711 DATA OUT = pino D7 do Arduino 
+#define CLK   6                       // HX711 SCK IN = pino D6 do Arduino 
 HX711 balanca;                        // define instancia balança HX711
 float calibration_factor = 12169.9293;     // Mudar em função do sensor
 
