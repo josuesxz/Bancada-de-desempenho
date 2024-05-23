@@ -9,9 +9,7 @@ void loop_vcas(){
   vcas = 0;
     if (difPressure > 0){
       vcas = sqrt((2.0 * difPressure)/densidade);
-    }
-  Serial.print("Diferenca de pressao: ");  
-  Serial.println(difPressure);  
-  Serial.print("Velocidade: ");  
+    } 
+  Serial.print(difPressure);Serial.print("$");  
   Serial.println(vcas);
 }

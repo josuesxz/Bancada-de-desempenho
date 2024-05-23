@@ -4,6 +4,5 @@ void begin_temperatura(){
 
 void loop_temperatura(){
   temperatura = dht.readTemperature();
-  Serial.print("Temperatura: ");
-  Serial.println(temperatura);
+  Serial.print(temperatura);Serial.print("#");
 }
