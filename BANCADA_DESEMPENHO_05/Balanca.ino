@@ -6,6 +6,6 @@ void begin_balanca(){
 
 void loop_balanca(){
   balanca.power_up(); // LIGANDO O SENSOR
-  Serial.print(balanca.get_units(), 3);Serial.print(";"); 
+  Serial.print(balanca.get_units()/100, 3);Serial.print(";"); 
   balanca.power_down(); // DESLIGANDO O SENSOR
 }

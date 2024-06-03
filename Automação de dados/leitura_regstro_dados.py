@@ -40,7 +40,7 @@ while True:
     with open(path + ".txt", "a") as arquivo: #abre o arquivo para poder escrever
         arquivo.write( conversao_serial) #escreve os dados ja convertidos em Strings
 
-    if len(Trust) == 30: break
+    if len(Trust) == 60: break
 
 ax.plot(Trust)  # Plot do dado de tração no teste estástico
 plt.show()
