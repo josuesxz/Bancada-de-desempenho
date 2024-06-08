@@ -1,0 +1,225 @@
+ (routes 
+  (resolution mm 100000)
+  (parser
+  )
+  (parser
+  )
+  (structure_out
+   (layer TOP (type signal)
+   )
+   (layer I1 (type signal)
+   )
+   (layer I2 (type signal)
+   )
+   (layer I3 (type signal)
+   )
+   (layer I4 (type signal)
+   )
+   (layer I5 (type signal)
+   )
+   (layer I6 (type signal)
+   )
+   (layer I7 (type signal)
+   )
+   (layer I8 (type signal)
+   )
+   (layer I9 (type signal)
+   )
+   (layer I10 (type signal)
+   )
+   (layer I11 (type signal)
+   )
+   (layer I12 (type signal)
+   )
+   (layer I13 (type signal)
+   )
+   (layer I14 (type signal)
+   )
+   (layer BOT (type signal)
+   )
+  )
+  (library_out
+  (padstack $VIA#0_SIGNAL
+   (shape (circ TOP 76200 0 0))
+   (shape (circ I1 76200 0 0))
+   (shape (circ I2 76200 0 0))
+   (shape (circ I3 76200 0 0))
+   (shape (circ I4 76200 0 0))
+   (shape (circ I5 76200 0 0))
+   (shape (circ I6 76200 0 0))
+   (shape (circ I7 76200 0 0))
+   (shape (circ I8 76200 0 0))
+   (shape (circ I9 76200 0 0))
+   (shape (circ I10 76200 0 0))
+   (shape (circ I11 76200 0 0))
+   (shape (circ I12 76200 0 0))
+   (shape (circ I13 76200 0 0))
+   (shape (circ I14 76200 0 0))
+   (shape (circ BOT 76200 0 0))
+  )
+  )
+  (network_out
+   (Net #00016 
+   (rule
+   )
+   (wire (path BOT 25400  -2743200 3556000 -3202044 3556000 -3202044 3932770)
+    (connect (terminal via) (terminal wire))
+   )
+   (wire (path TOP 25400  -2743200 2540000 -2743200 3556000)
+    (connect (terminal via) (terminal via))
+   )
+   (wire (path BOT 25400  -2484000 2500000 -2743200 2500000 -2743200 2540000)
+    (connect (terminal pin R2-1) (terminal via))
+   )
+   (wire (path BOT 25400  -3000000 4508000 -3202044 4305956 -3202044 3932770)
+    (connect (terminal pin CON_TAC-1) (terminal wire))
+    (type protect)
+    (attr fanout)
+   )
+   (via $VIA#0_SIGNAL -2743200 3556000)
+   (via $VIA#0_SIGNAL -2743200 2540000)
+   )
+   (Net #00017 
+   (rule
+   )
+   (wire (path BOT 25400  -4238000 2992000 -3800394 2992000 -3574113 3218281
+     -3574113 4949887 -3000000 5524000)
+    (connect (terminal pin "ARDUINO NANO"-5) (terminal pin CON_TAC-3))
+    (type protect)
+   )
+   (wire (path BOT 25400  -3000000 5524000 -2784209 5524000 -2333880 5073671
+     -2333880 3150120 -2484000 3000000)
+    (connect (terminal pin CON_TAC-3) (terminal pin R1-1))
+    (type protect)
+   )
+   )
+   (Net CLK_HX 
+   (rule
+   )
+   (wire (path BOT 101600  -4238000 3754000 -4484565 3507435 -4484565 1039686
+     -3984000 539121 -3984000 500000)
+    (connect (terminal pin "ARDUINO NANO"-8) (terminal pin BALANCA-2))
+    (type protect)
+   )
+   )
+   (Net CLOCK_SDP 
+   (rule
+   )
+   (wire (path BOT 101600  -5762000 3246000 -5466478 3246000 -5000000 3712478
+     -5000000 5750000 -5250000 6000000 -7500000 6000000 -8000000 5500000)
+    (connect (terminal pin "ARDUINO NANO"-23) (terminal pin SDP-0))
+    (type protect)
+   )
+   )
+   (Net DATA_SDP 
+   (rule
+   )
+   (wire (path BOT 101600  -5762000 3500000 -5563051 3500000 -5311387 3751664
+     -5311387 5564059 -5569356 5822028 -6153972 5822028 -6476000 5500000)
+    (connect (terminal pin "ARDUINO NANO"-22) (terminal pin SDP-3))
+    (type protect)
+   )
+   )
+   (Net DT_HX 
+   (rule
+   )
+   (wire (path BOT 101600  -4238000 4008000 -4750000 3496000 -4750000 750000
+     -4500000 500000 -4492000 500000)
+    (connect (terminal pin "ARDUINO NANO"-9) (terminal pin BALANCA-1))
+    (type protect)
+   )
+   )
+   (Net GND_HX 
+   (rule
+   )
+   (wire (path TOP 25400  -5000000 500000 -5000000 914400 -5384800 914400
+     -5384800 1976000 -5762000 1976000)
+    (connect (terminal pin BALANCA-0) (terminal pin "ARDUINO NANO"-28))
+   )
+   (wire (path BOT 101600  -5837500 2000000 -5786000 2000000)
+    (connect (terminal wire) (terminal wire))
+    (type protect)
+   )
+   (wire (path BOT 101600  -5932500 2000000 -7369000 2000000)
+    (connect (terminal wire) (terminal pin DHT22-2))
+    (type protect)
+   )
+   (wire (path BOT 25400  -5762000 1976000 -5837500 2000000)
+    (connect (terminal pin "ARDUINO NANO"-28) (terminal wire))
+    (type protect)
+   )
+   (wire (path BOT 25400  -5837500 2000000 -5932500 2000000)
+    (connect (terminal wire) (terminal wire))
+    (type protect)
+   )
+   (wire (path BOT 25400  -5762000 1976000 -5786000 2000000)
+    (connect (terminal pin "ARDUINO NANO"-28) (terminal wire))
+    (type protect)
+   )
+   )
+   (Net GND_SDP 
+   (rule
+   )
+   (wire (path BOT 101600  -5762000 5278000 -5790000 5250000 -6734000 5250000
+     -6984000 5500000)
+    (connect (terminal pin "ARDUINO NANO"-15) (terminal pin SDP-2))
+    (type protect)
+   )
+   )
+   (Net GND_TAC 
+   (rule
+   )
+   (wire (path BOT 25400  -4238000 2484000 -4222000 2500000 -3500000 2500000)
+    (connect (terminal pin "ARDUINO NANO"-3) (terminal pin R2-0))
+    (type protect)
+   )
+   (wire (path BOT 25400  -3500000 2500000 -3500000 3000000)
+    (connect (terminal pin R2-0) (terminal pin R1-0))
+    (type protect)
+   )
+   (wire (path BOT 25400  -3500000 3000000 -3202344 3297656 -2810130 3297656
+     -2500000 3607786 -2500000 4516000 -3000000 5016000)
+    (connect (terminal pin R1-0) (terminal pin CON_TAC-2))
+    (type protect)
+   )
+   )
+   (Net SIGNAL_DHT 
+   (rule
+   )
+   (wire (path BOT 127000  -5762000 4008000 -7113961 4008000 -7553812 3568149
+     -7877000 3244961 -7877000 2000000)
+    (connect (terminal pin "ARDUINO NANO"-20) (terminal pin DHT22-0))
+    (type protect)
+   )
+   )
+   (Net VCC_HX 
+   (rule
+   )
+   (wire (path TOP 25400  -5762000 2484000 -4516606 2484000 -4516606 1188009
+     -3476000 1188009 -3476000 500000)
+    (connect (terminal pin "ARDUINO NANO"-26) (terminal pin BALANCA-3))
+   )
+   (wire (path BOT 25400  -5762000 2484000 -5562718 2484000 -5323612 2244894
+     -5323612 1235068 -5491181 1067499 -7779827 1067499 -8057639 1345311
+     -8131000 1418672 -8131000 2000000)
+    (connect (terminal pin "ARDUINO NANO"-26) (terminal pin DHT22-4))
+    (type protect)
+   )
+   )
+   (Net VCC_SDP 
+   (rule
+   )
+   (wire (path BOT 101600  -5762000 5024000 -7016000 5024000 -7492000 5500000)
+    (connect (terminal pin "ARDUINO NANO"-16) (terminal pin SDP-1))
+    (type protect)
+   )
+   )
+   (Net VCC_TAC 
+   (rule
+   )
+   (wire (path TOP 25400  -4238000 2738000 -3000000 2738000 -3000000 4000000)
+    (connect (terminal pin "ARDUINO NANO"-4) (terminal pin CON_TAC-0))
+   )
+   )
+  )
+ )
