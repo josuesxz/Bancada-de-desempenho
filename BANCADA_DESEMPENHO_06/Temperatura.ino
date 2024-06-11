@@ -4,11 +4,14 @@ void begin_temperatura(){
 
 void loop_temperatura(){
   temperatura = dht.readTemperature();
-  if(temperatura > 0){
-  Serial.print(temperatura);
+  umidade = dht.readHumidity();
+
+  if(temperatura > 0 & umidade > 0){
+  Serial.print(temperatura); Serial.print("#");
+  Serial.print(umidade); Serial.print("%");
   }
   else{
-    Serial.print("0");
+      Serial.print("0.0"); Serial.print("#");
+      Serial.print("0.0"); Serial.print("%");
   }
-  Serial.print("#");
 }

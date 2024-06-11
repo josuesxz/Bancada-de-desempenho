@@ -6,7 +6,7 @@
 #define DHTPIN A2
 #define DHTTYPE DHT22
 DHT dht(DHTPIN, DHTTYPE);
-double temperatura;
+double temperatura, umidade;
 
 #define DOUT  7                     // HX711 DATA OUT = pino D7 do Arduino 
 #define CLK   6                       // HX711 SCK IN = pino D6 do Arduino 
