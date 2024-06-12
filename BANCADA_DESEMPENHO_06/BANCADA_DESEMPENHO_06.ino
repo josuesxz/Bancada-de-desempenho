@@ -38,5 +38,5 @@ void loop(){
   loop_tac(); 
   loop_temperatura();
   loop_vcas();   
-  delay(1000);
+  delay(500);
 }

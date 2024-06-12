@@ -3,7 +3,7 @@ import serial.tools.list_ports
 import matplotlib.pyplot as plt
 import statistics
 
-temp = 10 #definir um tempo de coleta
+temp = 120 #definir um tempo de coleta
 fig1, ax1 = plt.subplots()             # Create a figure containing a single Axes.
 fig2, ax2 = plt.subplots()
 fig3, ax3 = plt.subplots()
