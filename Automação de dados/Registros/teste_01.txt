@@ -1,9 +1,0 @@
-Valores em fileira de: Temperatura, Balança, Pressão, Velocidade e RPM
-Balanca: 0.000
-
-Balanca: 0.000
-
-Balanca: 0.000
-
-Balanca: 0.000
-

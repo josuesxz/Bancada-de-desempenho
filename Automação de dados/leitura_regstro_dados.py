@@ -3,10 +3,10 @@ import serial.tools.list_ports
 import matplotlib.pyplot as plt
 import statistics
 
-temp = 120 #definir um tempo de coleta
+temp = 60 #definir um tempo de coleta
 fig1, ax1 = plt.subplots()             # Create a figure containing a single Axes.
-fig2, ax2 = plt.subplots()
-fig3, ax3 = plt.subplots()
+#fig2, ax2 = plt.subplots()
+#fig3, ax3 = plt.subplots()
 
 port = arduino.tools.list_ports.comports() #realiza a leitura das COMs
 print("Portas COM disponiveis:")
@@ -49,7 +49,7 @@ while True:
     humidity.append(dados[3])
     vel.append(dados[5])
      
-    path = "C:/Users/stem/GuitHub/Bancada-de-desempenho/Automação de dados/Registros" + nomeArquivo #definido endereço para o arquivo (mudar conforme o local que deseja)
+    path = "C:/Users/stem/GuitHub/Bancada-de-desempenho/Automação de dados/Registros/" + nomeArquivo #definido endereço para o arquivo (mudar conforme o local que deseja)
     with open(path + ".txt", "a") as arquivo: #abre o arquivo para poder escrever
         arquivo.write( conversao_serial) #escreve os dados ja convertidos em Strings
 
@@ -77,11 +77,11 @@ while True:
 
 ax1.set_title('Tração')
 ax1.plot(Trust, color='blue')  # Plot do dado de tração no teste estástico (posso adicionar o eixo x também)
-
+''''
 ax2.set_title('RPM')
 ax2.plot(tacometro, color='green')
 
 ax3.set_title('Velocidade')
 ax3.plot(vel, color='red')
-
+'''
 plt.show()
