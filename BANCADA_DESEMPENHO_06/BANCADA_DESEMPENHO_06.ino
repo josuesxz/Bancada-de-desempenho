@@ -11,7 +11,7 @@ double temperatura, umidade;
 #define DOUT  7                     // HX711 DATA OUT = pino D7 do Arduino 
 #define CLK   6                       // HX711 SCK IN = pino D6 do Arduino 
 HX711 balanca;                        // define instancia balança HX711
-float calibration_factor = 0.10265956989247;     // Mudar em função do sensor (balança) (antigo valor = 102.65956989247)_
+float calibration_factor = 0.10265956989247;     // Mudar em função do sensor (balança) (antigo valor = 102.65956989247)
 
 float difPressure, vcas, massa;
 float densidade = 1.213;                  // Mudar em função do local
