@@ -6,7 +6,7 @@ void begin_balanca(){
 
 void loop_balanca(){
   balanca.power_up(); // LIGANDO O SENSOR
-  Serial.print(balanca.get_units()/1000, 3);
+  Serial.print((balanca.get_units(), 3)*9.8066); //lendo e convertendo para de Kgf para N
   Serial.print(";"); 
   balanca.power_down(); // DESLIGANDO O SENSOR
 }
