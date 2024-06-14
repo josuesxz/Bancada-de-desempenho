@@ -49,7 +49,7 @@ while True:
     humidity.append(dados[3])
     vel.append(dados[5])
      
-    path = "C:/Users/stem/GuitHub/Bancada-de-desempenho/Automação de dados/Registros/" + nomeArquivo #definido endereço para o arquivo (mudar conforme o local que deseja)
+    path = "C:/Users/Iatecam/Desktop/Bancada-de-desempenho/Automação de dados/Registros/M2/" + nomeArquivo #definido endereço para o arquivo (mudar conforme o local que deseja)
     with open(path + ".txt", "a") as arquivo: #abre o arquivo para poder escrever
         arquivo.write( conversao_serial) #escreve os dados ja convertidos em Strings
 
