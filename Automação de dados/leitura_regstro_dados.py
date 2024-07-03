@@ -3,7 +3,7 @@ import serial.tools.list_ports
 import matplotlib.pyplot as plt
 import statistics
 
-temp = 30 #definir um tempo de coleta
+temp = 8 #definir um tempo de coleta
 fig1, ax1 = plt.subplots()             # Create a figure containing a single Axes.
 #fig2, ax2 = plt.subplots()
 #fig3, ax3 = plt.subplots()
@@ -49,7 +49,7 @@ while True:
     humidity.append(dados[3])
     vel.append(dados[5])
      
-    path = "C:/Users/stem/GuitHub/Bancada-de-desempenho/Automação de dados/Registros/Dinamico/" + nomeArquivo #definido endereço para o arquivo (mudar conforme o local que deseja)
+    path = "C:/Users/stem/GuitHub/Bancada-de-desempenho/Automação de dados/Registros/Dinamico-2.0/" + nomeArquivo #definido endereço para o arquivo (mudar conforme o local que deseja)
     with open(path + ".txt", "a") as arquivo: #abre o arquivo para poder escrever
         arquivo.write( conversao_serial) #escreve os dados ja convertidos em Strings
 
